@@ -1,0 +1,491 @@
+
+* {
+	box-sizing: border-box;
+}
+body {
+    font-family: 'Meta Pro', sans-serif;
+    margin: 0;
+    line-height: 1.5;
+}
+/* Start Nav Styles */
+.navbar {
+	padding: 0 !important;
+	margin: 0 !important;
+	background-color: #ffffff;
+}
+.navbar .nav-menu li a {
+  color: #000000;
+}
+.navbars {
+  position: fixed;
+  z-index: 999;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+}
+.navbars .nav-menus {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.navbars .nav-menus li {
+  position: relative;
+  min-width: 200px;
+  text-align: right;
+}
+.navbars .nav-menus li .dot {
+  display: block;
+  color: #fff;
+  padding: 5px 0;
+  text-decoration: none;
+}
+.navbars .nav-menus li .dot::before,
+.navbars .nav-menus li .dot::after {
+  display: block;
+  position: absolute;
+  content: '';
+  border-radius: 50%;  
+  top: 50%;  
+  transition: all .3s ease;
+}
+.navbars .nav-menus li .dot::before {
+  width: 5px;
+  height: 5px;
+  right: 0;
+  border: 2px solid #f44336;
+  transform: translateY(-50%);
+}
+.navbars .nav-menus li .dot::after {
+  transform: translateY(-50%) scale(1);
+    width: 15px;
+    height: 15px;
+    right: -5px;
+    border: 2px solid #f44336;
+}
+.navbars .nav-menus li .dot.active::before,
+.navbars .nav-menus li:hover .dot::before {
+  background: #f44336;
+  border-color: #f44336;
+}
+.navbars .nav-menus li .dot.active::after,
+.navbars .nav-menus li:hover .dot::after {
+  transform: translateY(-50%) scale(1);  
+}
+.navbars .nav-menus li .dot span {
+    opacity: 0;
+    font-weight: 400;
+    letter-spacing: .5px;
+    text-transform: capitalize;
+    color: #f44336;
+    margin-right: 15px;
+    font-size: 12px;
+    transform: translateX(20px);
+    transition: all .3s ease;
+}
+
+.navbars .nav-menus li .dot.active span,
+.navbars .nav-menus li:hover .dot span {
+  transform: translateX(0px);
+  opacity: 1;
+}
+/* End Nav Styles */
+
+/*BG parallax*/
+.parallax {
+    min-height: 400px;
+    background: transparent;
+    height: 569px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: 1;
+    color: #fff;
+}
+.parallax .content-wrapper {
+	padding: 5%;
+}
+.parallax .content-wrapper .parallax-content {
+	padding: 6%;
+}
+.parallax .content-wrapper .parallax-content h1 {
+    font-size: 100px;
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 400;
+
+}
+.parallax .content-wrapper .parallax-content p  {
+	margin-bottom: 60px;
+}
+.parallax .content-wrapper .parallax-content p strong {
+	font-size: 36px;
+}
+.parallax .content-wrapper .parallax-content p span{
+	font-size: 19px;
+}
+.parallax .content-wrapper .parallax-content .scroll-arrow {
+
+}
+.parallax .content-wrapper .parallax-content .scroll-arrow img {
+	height: 50px;
+	transition:  2s;
+}
+
+.parallax .content-wrapper .parallax-content .scroll-arrow:hover img {
+	display: none;
+	transition:  2s;
+}
+.parallax .content-wrapper .parallax-content .scroll-arrow:hover span {
+	display: block !important;
+	transition:  2s;
+}
+.parallax .content-wrapper .parallax-content .scroll-arrow a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.parallax .content-wrapper .parallax-content .scroll-arrow a span {
+	
+	display: none;
+}
+/*Home parallax*/
+.hours {
+    min-height: 400px;
+    background: transparent;
+    height: 569px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: 1;
+    color: #fff;
+}
+.hours .content-wrapper {
+	padding: 5%;
+}
+.hours .content-wrapper .parallax-content {
+	padding: 3%;
+}
+.hours .content-wrapper .parallax-content h1 {
+    font-size: 120px;
+
+}
+
+/*end BG parallax*/
+
+/*What start*/
+.what {
+	padding: 5% ;
+	color: #000000;
+}
+.what .content-block {
+
+}
+.what .content-block .what-content {
+	
+}
+.what .content-block .what-content .what-content-title {
+	font-size: 24px;
+	padding: 30px;
+	font-weight: 500;
+}
+
+.what .content-block .what-content .what-content-subtitle {
+	font-size: 18px;
+    font-weight: 400;
+    padding: 0px 32px;
+    color: #4E4E4E;
+}
+.what .content-block .what-content .social-media img {
+    padding: 15px 28px;
+    opacity: 0.5;
+}
+.what .content-block .what-content .social-media img:hover	{
+	opacity: 1;
+	transition: 1.5s;
+}
+/*what*/
+.location {
+	padding: 5% 3% 0%;
+	color: #000000;
+}
+.location .content-block {
+	padding: 2%;
+}
+.location .content-block img {
+	
+}
+.location .content-block .location-content-title {
+	font-size:  24px;
+}
+
+.address {
+	padding: 3% 3% 6%;
+}
+.address .address-dis {
+	padding: 3%;
+}
+
+.address .address-dis .time h5 {
+    padding: 0% 18%;
+    font-weight: 400;
+}
+.address .location-maps {
+	padding: 5%;
+}
+
+.about {
+	padding: 5% ;
+}
+.about .content-block .what-content {
+	padding: 6%;
+}
+
+
+.about .content-block .what-content .what-content-title {
+	font-size: 23px;
+	font-weight: 450;
+	padding: 30px 0px;
+}
+.about .content-block .what-content .what-content-subtitle {
+	font-size: 18px;
+    font-weight: 500;
+    color: #4E4E4E;
+}
+.about .content-block .what-content .social-media img {
+    padding: 15px 28px;
+    opacity: 0.5;
+}
+.about .content-block .what-content .social-media img:hover	{
+	opacity: 1;
+	transition: 1.5s;
+}
+
+.what-place {
+	padding: 5% 3%;
+	color: #000000;
+}
+.what-place .content-block {
+	padding: 2% 17%;
+}
+.what-place .content-block .what-content {
+
+}
+.what-place .content-block .what-content .what-content-title {
+	font-size: 28px;
+
+}
+
+.what-place .content-block .what-content .what-content-subtitle {
+	font-size: 18px;
+    font-weight: 500;
+   /* padding: 0px 32px;*/
+    color: #4E4E4E;
+}
+.what-place .content-block .what-content .social-media img {
+    padding: 15px 28px;
+    opacity: 0.5;
+}
+.what-place .content-block .what-content .social-media img:hover	{
+	opacity: 1;
+	transition: 1.5s;
+}
+
+/*product dreams*/
+.dreams {
+	padding: 6% 3% 0% 3%;
+}
+.dreams .dreams-wrapper {
+	padding: 4%;
+}
+.dreams .dreams-wrapper .dreams-content {
+
+}
+.dreams .dreams-wrapper .dreams-content .dreams-heading {
+	padding: 4% 0%;
+}
+.dreams .dreams-wrapper .dreams-content .dreams-heading h1 {
+	font-size: 28px;
+}
+.dreams .dreams-wrapper .dreams-content .dreams-slider {
+	padding: 3%;
+}
+/*What end*/
+.service {
+    background: transparent;
+
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: 1;
+    color: #fff;
+}
+.service .content-wrapper {
+	padding: 7%;
+}
+.service .content-wrapper .service-content {
+
+}
+.service .content-wrapper .service-content h1 {
+    font-size: 100px;
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-weight: 400;
+}
+/*End Service*/
+.about-what {
+    background: transparent;
+
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: 1;
+    color: #fff;
+}
+.about-what .content-wrapper {
+	padding: 7%;
+}
+.about-what .content-wrapper .service-content {
+	padding: 2% 12%;
+}
+.about-what .content-wrapper .service-content h1 {
+    font-size: 120px;
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-weight: 400;
+}
+/*natural start*/
+
+.nature {
+	padding: 6%;
+}
+.nature .image-wrapper {
+	text-align: -webkit-center;
+	max-width: 550px;
+	margin: 0 auto;
+	height: 400px;
+}
+.nature .image-wrapper img {
+	
+}
+.nature .image-wrapper figcaption {
+	position: relative;
+    bottom: 88px;
+    
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    background: rgb(0 0 0 / 55%);
+    box-sizing: border-box;
+    overflow-y: auto;
+    opacity: 0;
+    transition: opacity .5s ease-out ;
+}
+.nature .image-wrapper figcaption .image-contant {
+
+}
+.nature .image-wrapper figcaption .image-contant p {
+	font-size: 16px;
+	margin: 0;
+}
+.nature .image-wrapper:hover figcaption {
+	opacity: 1;
+}
+.nature .what-content-subtitle {
+	font-size: 18px;
+    font-weight: 500;
+    padding: 0px 60px;
+    color: #4E4E4E;
+}
+/*natural end*/
+.showroom {
+	padding: 6%;
+}
+.showroom .showroom-item-1 {
+
+}
+.showroom .showroom-item-1 img {
+
+}
+.showroom .showroom-item-2 {
+
+}
+.showroom .showroom-item-2 img {
+	
+}
+.showroom .showroom-item-3 {
+	padding-top: 43px;
+}
+.showroom .showroom-item-3 img {
+	
+}
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+  /* Default to hidden */
+  display: none;
+
+  /* Overlay entire screen */
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  /* A bit of padding around image */
+  padding: 2em;
+  margin-top: 3em;
+  /* Translucent background */
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Unhide the lightbox when it's the target */
+.lightbox:target {
+  display: block;
+}
+
+.lightbox span {
+  /* Full width and height */
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  /* Size and position background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.lightbox .modal-header {
+	border: none !important;
+}
+
+footer {
+	background-color: #F5F5F5;
+}
+.arrow {
+	
+}
+span.arrow svg {
+    margin-bottom: -10px;
+}
+.back-to-top-link a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+}
+.top {
+    width: 55px;
+    margin: 0 auto;
+    margin-top: -75px;
+}
+
+.back-to-top-link {
+    background-color: #ffffff;
+    border-radius: 50%;
+}
