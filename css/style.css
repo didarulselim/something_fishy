@@ -9,7 +9,6 @@ body {
 }
 /* Start Nav Styles */
 .navbar {
-	padding: 0 !important;
 	margin: 0 !important;
 	background-color: #ffffff;
 }
@@ -92,9 +91,8 @@ body {
 
 /*BG parallax*/
 .parallax {
-    min-height: 400px;
     background: transparent;
-    height: 569px;
+    height: auto;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
@@ -103,21 +101,21 @@ body {
     color: #fff;
 }
 .parallax .content-wrapper {
-	padding: 5%;
+	padding: 6% 0% 6%;
 }
 .parallax .content-wrapper .parallax-content {
-	padding: 6%;
+	padding: 8% 0% 0%;
 }
 .parallax .content-wrapper .parallax-content h1 {
-    font-size: 100px;
+    font-size: 90px;
     line-height: 1em;
     text-transform: uppercase;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     font-weight: 400;
 
 }
 .parallax .content-wrapper .parallax-content p  {
-	margin-bottom: 60px;
+	margin-bottom: 90px;
 }
 .parallax .content-wrapper .parallax-content p strong {
 	font-size: 36px;
@@ -126,7 +124,8 @@ body {
 	font-size: 19px;
 }
 .parallax .content-wrapper .parallax-content .scroll-arrow {
-
+	width: max-content;
+    margin: auto;
 }
 .parallax .content-wrapper .parallax-content .scroll-arrow img {
 	height: 50px;
@@ -146,12 +145,12 @@ body {
 	color: #ffffff;
 }
 .parallax .content-wrapper .parallax-content .scroll-arrow a span {
-	
+	width: max-content;
+    margin: auto;
 	display: none;
 }
 /*Home parallax*/
 .hours {
-    min-height: 400px;
     background: transparent;
     height: 569px;
     position: relative;
@@ -323,16 +322,15 @@ body {
     color: #fff;
 }
 .service .content-wrapper {
-	padding: 7%;
+	padding: 6% 0% 6%;
 }
 .service .content-wrapper .service-content {
 
 }
 .service .content-wrapper .service-content h1 {
     font-size: 100px;
-    line-height: 1em;
     text-transform: uppercase;
-    letter-spacing: 7px;
+    letter-spacing: 5px;
     font-weight: 400;
 }
 /*End Service*/
@@ -424,6 +422,9 @@ body {
 .showroom .showroom-item-3 img {
 	
 }
+#something .content-wrapper {
+    padding: 8% 0% 8%;
+}
 /** LIGHTBOX MARKUP **/
 
 .lightbox {
@@ -489,3 +490,46 @@ span.arrow svg {
     background-color: #ffffff;
     border-radius: 50%;
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+	.navbars {
+		display: none;
+	}
+	 h1 {
+		font-size: 50px !important;
+	}
+	
+	hr {
+		max-width: 280px;
+	}
+}
+@media (min-width: 320px) and (max-width: 375px) {
+
+	.parallax .content-wrapper .parallax-content p span {
+		font-size: 15px;
+	}
+	.navbar-brand img {
+		width: 222px;
+		height: auto;
+	}	
+	.nature .what-content-subtitle {
+		padding: 0 !important;
+	}
+	.what .content-block .what-content .what-content-subtitle {
+		padding: 0 !important;
+	}
+	#hours .content-wrapper .parallax-content h1 {
+    font-size: 36px !important;
+}
+.parallax .content-wrapper .parallax-content p strong {
+    font-size: 26px;
+}
+.nature .image-wrapper figcaption {
+	bottom: 0 !important;
+}
+}
+ @media (min-width: 375px) and (max-width: 767px) {
+ 	.nature .image-wrapper figcaption {
+	bottom: 110px !important;
+}
+ }
